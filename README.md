@@ -7,7 +7,11 @@ Debugit is a week long hackathon open to ideas in a very literal sense. You can 
 ## How to make a submission?
 Submissions are to be made through GitHub Pull Requests. To know more about how to make a GitHub Pull Request you can refer the [Fundamentals of Git](https://www.youtube.com/playlist?list=PLLt4yMoVgczVgFcTzT60U5IXtNX1qjHL9) playlist which contains everything that you would need.
 
-Here is a detailed step by step walkthrough if you don't know how to make a Debugit submission.
+## Make sure to include
+  - A README.md file with your name, contact information, project description and how to run the code (and other necessary information).
+  - A folder containing a demo video of your project.
+
+## Here is a detailed step by step walkthrough if you don't know how to make a Debugit submission.
 
 - Create a fork of this [repository](https://github.com/COPS-IITBHU/Debugit_2022)
  A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project. 
@@ -41,7 +45,7 @@ Here is a detailed step by step walkthrough if you don't know how to make a Debu
      ![](./lib/clone.png)
 
   4. You will find that the repository is cloned in the directory.
-- Now you can open the directory in vs code and play with the code and complete your project. Make sure to include a README.md file with your name, contact information, project description, how to run the code and a link to a demo video of your project (and other necessary information).
+- Now you can open the directory in vs code and play with the code and complete your project. 
 - After completing the project, its time to push your code:
   1. Open the vs code (or any other editor of your choice) terminal in the project folder. 
   2. Create a new branch in which you want to push your code using the following code.
