@@ -34,7 +34,7 @@ Here is a detailed step by step walkthrough if you don't know how to make a Debu
      git checkout -b <branch_name>
      ```
      You can name your branch whatever you like.
-     
+
      ![](./lib/create_branch.png)
   3. Check which branch are you on using the `git branch` command.
      ```
@@ -67,11 +67,13 @@ Here is a detailed step by step walkthrough if you don't know how to make a Debu
      git commit -m "first commit"
      ```
      You can replace `first commit` with anything. It is actually a message to let you keep a brief track of what changes has been done in that commit.
+
+     ![](./lib/commit.png)
   7. Push your code.
      Push all of your commited code using the `git push` command.
     Run the following command:
      ```
-     git push --set-upstream origin <branch_name> 
+     git push --set-upstream origin <branch_name>
      ```
      (I dont remember the command. RECHECK LATER.)
 - Make the Pull Request and submit your code.
