@@ -2,7 +2,7 @@
 [![Debugit](./lib/copsWeek_debugit.png)](https://hackalog.copsiitbhu.co.in/hackathon/debug-it-2022)
 
 ## Introduction
-<!-- description from the poster -->
+Debugit is a week long hackathon open to ideas in a very literal sense. You can make anything from the projects' list we'll share or ignite the inquisitive Bob the Builder inside you to make something exciting and completely new!
 
 ## How to make a submission?
 Submissions are to be made through GitHub Pull Requests. To know more about how to make a GitHub Pull Request you can refer the [Fundamentals of Git](https://www.youtube.com/playlist?list=PLLt4yMoVgczVgFcTzT60U5IXtNX1qjHL9) playlist which contains everything that you would need.
@@ -75,13 +75,17 @@ Here is a detailed step by step walkthrough if you don't know how to make a Debu
      ```
      git push --set-upstream origin <branch_name>
      ```
-     (I dont remember the command. RECHECK LATER.)
+     ![](./lib/push.png)
+
 - Make the Pull Request and submit your code.
   1. After you push your code, it gets uploaded to your forked directory and creates a new branch that you created.
   2. If it notices any difference in the code of your forked repo and the parent repo. It automatically shows you an option to create a pull request.
-  3. Write down a brief description of your project in the Pull Request description and give the PR a proper title and click on create pull request. Now GitHub might run some checks. If you pass all the checks, you are good to go 
+    ![](./lib/pull_request.png)
+  3. Write down a brief description of your project in the Pull Request description and give the PR a proper title and click on create pull request. Now GitHub might run some checks. If you pass all the checks, you are good to go.
+    ![](./lib/submission.png) 
 
 - Pat yourself on the back
+
   ![](./lib/pat.gif)
 
 > All The Best 🎉🎉.
