@@ -12,19 +12,34 @@ Here is a detailed step by step walkthrough if you don't know how to make a Debu
 - Create a fork of this [repository](https://github.com/COPS-IITBHU/Debugit_2022)
  A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project. 
    1. Click on the fork icon in the repository that you might find at the top right corner.
+
+   Demo:
    ![](./lib/fork.png)
+
    2. It will ask you what would you like to name the forked repository. By default they are named the same as the parent directory. Lets keep the name as it is.
+
+   Demo:
    ![](./lib/fork_name.png)
+
 - Clone the repository that you forked
   1. Find the link which you would need to clone and copy it.
+
+   Demo:
    ![](./lib/clone_link.png)
+
   2. Go to the directory in which you want to clone your repository and open the terminal.
+
+   Demo:
    ![](./lib/open_terminal.png)
+
   3. Run the `git clone` command in the terminal (in case of windows, git bash terminal) and append the link that you copied.
      ```
      git clone <repository_link>
      ```
+
+     Demo:
      ![](./lib/clone.png)
+
   4. You will find that the repository is cloned in the directory.
 - Now you can open the directory in vs code and play with the code and complete your project. Make sure to include a README.md file with your name, contact information, project description, how to run the code and a link to a demo video of your project (and other necessary information).
 - After completing the project, its time to push your code:
@@ -35,7 +50,9 @@ Here is a detailed step by step walkthrough if you don't know how to make a Debu
      ```
      You can name your branch whatever you like.
 
+     Demo:
      ![](./lib/create_branch.png)
+
   3. Check which branch are you on using the `git branch` command.
      ```
      git branch
@@ -59,7 +76,9 @@ Here is a detailed step by step walkthrough if you don't know how to make a Debu
      ```
      It is recommended not to add the some directories like node_modules directory in your commit. You can prevent it by adding it in a `.gitignore` file (For more reference [here](https://www.w3schools.com/git/git_ignore.asp?remote=github)).
 
+     Demo:
      ![](./lib/add_files.png)
+
   6. Commmit your code.
      You can commit all your staged code (to the local git repository) using the `git commit` command
     Run the following command:
@@ -68,21 +87,31 @@ Here is a detailed step by step walkthrough if you don't know how to make a Debu
      ```
      You can replace `first commit` with anything. It is actually a message to let you keep a brief track of what changes has been done in that commit.
 
+     Demo:
      ![](./lib/commit.png)
+
   7. Push your code.
      Push all of your commited code using the `git push` command.
     Run the following command:
      ```
      git push --set-upstream origin <branch_name>
      ```
+
+     Demo:
      ![](./lib/push.png)
 
 - Make the Pull Request and submit your code.
   1. After you push your code, it gets uploaded to your forked directory and creates a new branch that you created.
   2. If it notices any difference in the code of your forked repo and the parent repo. It automatically shows you an option to create a pull request.
+
+    Demo:
     ![](./lib/pull_request.png)
+
   3. Write down a brief description of your project in the Pull Request description and give the PR a proper title and click on create pull request. Now GitHub might run some checks. If you pass all the checks, you are good to go.
+
+    Demo:
     ![](./lib/submission.png) 
+
 
 - Pat yourself on the back
 
