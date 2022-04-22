@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadsters | Profile</title>
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/topbar.css">
+</head>
+<body>
+    <div class="topsection">
+        <p class="topheadline">Roadsters</p>
+        <div class="links">
+            <a href="/buyer/dashboard" class="link">DashBoard</a>
+            <a href="/login" class="link">I am a seller</a>
+        </div>
+    </div>
+    <div class="header">
+       <h2>Profile</h2>
+    </div>
+    <div class="data">
+        <% if(profile.name!=" ") {%>
+            <p><span>Name: </span><%= profile.name %></p>
+        <% } %>
+        <% if(profile.phone!=" ") {%>
+            <p><span>Mobile No.: </span><%= profile.phone %></p>
+        <% } %>
+        <% if(profile.email!=" ") {%>
+            <p><span>Email: </span><%= profile.email %></p>
+            <% } %>
+    </div>
+    
+</body>
+</html>

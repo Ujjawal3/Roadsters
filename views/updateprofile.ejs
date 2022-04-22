@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadsters | Update</title>
+    <link rel="stylesheet" href="/css/signin.css">
+    <link rel="stylesheet" href="/css/topbar2.css">
+</head>
+<body>
+    <div class="topsection">
+        <p class="topheadline">Roadsters</p>
+        <div class="links">
+            <a href="/seller/dashboard" class="link">Dashboard</a>
+            <a href="/logout" class="link">LogOut</a>
+        </div>
+    </div>
+    <div class="form" style="margin-top: 20vh">
+            <div class="header">
+                <h1 style="font-size:35px; margin-bottom:40px">Update Profile</h1>
+            </div>
+            <div class="main">
+                <form action="/seller/update/profile" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required value=<%= user.name %>>
+                    <label for="phone">Mobile No.</label>
+                    <input type="text" name="phone" id="phone" placeholder="Mobile No." required value=<%= user.phone %>>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Email" required value=<%= user.email %>>
+                    <button style="margin-bottom: 30px">Save Changes</button>
+                </form>
+            </div>
+    </div>
+</body>
+</html>

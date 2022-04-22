@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadsters | Bicycle</title>
+    <link rel="stylesheet" href="/css/bicycle.css">
+    <link rel="stylesheet" href="/css/topbar2.css">
+</head>
+
+<body>
+    <div class="topsection">
+        <p class="topheadline">Roadsters</p>
+        <div class="links">
+            <a href="/seller/dashboard" class="link" >Dashboard</a>
+            <a href="/logout" class="link"> Logout</a>
+        </div>
+    </div>
+    <div class="bicycle">
+        <p class="title"><%= bicycle.title %></p>
+        <h3 class="price">₹<%= bicycle.SP %></h3>
+        <h2>Description</h2>
+        <p class="description"><%= bicycle.description %></p>
+    </div>
+    <div class="buttons">
+        <a href="/seller/update/<%= index %> "><button>Edit this Advertisement</button></a>
+        <button link="/delete/?id=<%= seller %>&index=<%= index %>">Delete this Advertisement</button></a>
+    </div>
+</body>
+<script src="/js/delete.js"></script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadsters | Signin</title>
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+
+<body>
+    <div class="form">
+            <div class="header">
+                <h1>Login</h1>
+            </div>
+            <div class="main">
+                <form action="/login" method="post">
+                    <% if(success_msg!=' ') { %>
+                        <h4 class="header"><%= success_msg %></h4>
+                        <% } %>
+                        <% if(error!=' ') { %>
+                            <h4 class="header"><%= error %></h4>
+                            <% } %>
+                    <label for="userid">Username</label>
+                    <input type="text" name="userid" id="userid" placeholder="Username"  required>
+                    <label for="password">Password</label>
+                    <input type="password" name="pass" id="password" placeholder="Password" required>
+                    <button>Login</button>
+                </form>
+            </div>
+			<div class="links">
+				<a href="/signup">Not Registered? Register here</a><br><br>
+				<a href="/buyer/dashboard">I am buyer</a>
+			</div>
+    </div>
+</body>
+</html>

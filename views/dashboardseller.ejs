@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadsters| Dashboard</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/topbar2.css">
+</head>
+
+<body>
+    <div class="topsection">
+        <p class="topheadline">Roadsters</p>
+        <div class="links">
+            <a href="/seller/profile" class="link">My Profile</a>
+            <a href="/logout" class="link">LogOut</a>
+        </div>
+    </div>
+    <% if(bicycle.length==0) { %>
+      <h2 class="createnew">No Bicycle listed for selling</h2>
+    <% }  else{ %>
+        <div class="advertisements">
+            <% for(let i=0;i<bicycle.length;i++) { %>
+                <a href='/seller/bicycle/<%= i %>'>
+                        <div class="card">
+                            <div class="title">
+                                <h3><%= bicycle[i].title %></h3>
+                            </div>
+                            <div class="description">
+                                <p><%= bicycle[i].description %></p>
+                            </div>
+                            <div class="price">
+                                <h2>₹<%= bicycle[i].SP %></h2>
+                            </div>
+                        </div>
+                </a>
+            <% } %>
+      </div>
+    <% } %>
+    <div class="footer"></div>
+    <a href='/seller/update/<%= bicycle.length %>'><div class="icon">+</div></a>
+</body>
+</html>

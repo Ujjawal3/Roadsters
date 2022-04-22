@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadsters| Update</title>
+    <link rel="stylesheet" href="/css/updatebicycle.css">
+    <link rel="stylesheet" href="/css/topbar2.css">
+</head>
+<body>
+    
+    <div class="topsection">
+        <p class="topheadline">Roadsters</p>
+        <div class="links">
+            <a href="/seller/dashboard" class="link">DashBoard</a>
+            <a href="/logout" class="link">LogOut</a>
+        </div>
+    </div>
+    <div class="form">
+        <form method="post" action= /seller/save/<%= index %>> 
+   
+            <label for="title">Title for your Ad</label>
+            <input type="text" name="title" id="title" required value=<%= bicycle.title %>>
+            <label for="description">Description of your Bicycle</label>
+            <textarea name="description" id="description" required><%= bicycle.description %></textarea>
+            <label for="SP">Selling Price(in Rs.)</label>
+            <input type="number" name="SP" id="SP" required value=<%= bicycle.SP %> >
+            <button type="submit">Post Advertisement</button>
+        </form>
+    </div>
+</body>
+
+
+</html>

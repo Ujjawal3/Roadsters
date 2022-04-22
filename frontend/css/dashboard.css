@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #cde6f3;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.createnew {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+    color: black;
+}
+
+.advertisements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 75px 10px;
+}
+
+.advertisements .card {
+    box-sizing: border-box;
+    width: 380px;
+    border: 2px solid black;
+    margin: 15px 15px;
+    border-radius: 8px;
+    word-wrap: break-word;
+    background-color: #ffd8e3;
+}
+
+.card:hover{
+    border: 3px solid rgb(91, 91, 234);
+    background-color: #dcd0d3;
+}
+
+.card .title {
+    padding: 3px 8px;
+    font-size: 17px;
+    height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: italic;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.card .description {
+    padding: 7px 8px;
+    height: 52px;
+    overflow: hidden;
+    font-style: italic;
+}
+
+.card .price {
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    text-align: center;
+    padding-top: 4px;
+    
+    border-top: 2px solid black;
+}
+
+.footer{
+    height: 3%;
+    width:100%;
+    background-color:  rgb(238, 230, 230);
+    position: fixed;
+    bottom: 0px;
+    left:0px;
+    border-top: 1px solid black;
+}
+
+.icon{
+    background-color: blue;
+    color:white;
+    z-index: 3;
+    position: fixed;
+    bottom: 2%;
+    left:48%;
+    text-align: center;
+    font-size: 30px;
+    border:2px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    padding:0px 10px;
+    animation: buttonPulse .2s infinite ease-in-out;
+    transition: all ease-out .2s;
+}
+
+.icon:hover{
+    box-shadow: 0px 0px 5px blue,
+                0px 0px 20px  blue,
+                0px 0px 60px  blue,
+                0px 0px 100px  blue;
+        
+}
+@media only screen and (max-width:400px){
+    .advertisements .card {
+        box-sizing: border-box;
+        width: 330px;
+        border: 2px solid black;
+        margin: 15px 15px;
+        border-radius: 8px;
+        word-wrap: break-word;
+    }
+
+} 

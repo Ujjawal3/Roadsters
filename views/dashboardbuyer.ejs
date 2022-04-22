@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadsters| Dashboard</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/topbar2.css">
+</head>
+
+<body>
+    <div class="topsection">
+        <p class="topheadline">Roadsters</p>
+        <div class="links">
+            <a href="/login" class="link">I am a seller</a>
+        </div>
+    </div>
+    <% let bicycle=false %>
+    <% for(let j=0;j<user.length;j++) { %>
+      <% if(user[j].bicycles.length!==0) { bicycle=true; break;}%>
+    <% } %>
+    <% if(!bicycle) { %>   
+      <h2 class="createnew">No Bicycle available for sale</h2>
+    <% }  else { %>
+      <div class="advertisements">
+        <% for(let j=0;j<user.length;j++) { %>
+            <% for(let i=0;i<user[j].bicycles.length;i++) { %>
+              <a href='/buyer/bicycle/?seller=<%= user[j].userid %>&index=<%= i %>'>
+                  <div class="card">
+                    <div class="title">
+                      <h3><%= user[j].bicycles[i].title %></h3>
+                    </div>
+                    <div class="description">
+                      <p><%= user[j].bicycles[i].description %></p>
+                    </div>
+                    <div class="price">
+                      <h2>₹<%= user[j].bicycles[i].SP %></h2>
+                    </div>
+                  </div>
+              </a>
+          <% } %>
+        <% } %>
+      </div>
+    <% } %>
+
+</body>
+</html>
