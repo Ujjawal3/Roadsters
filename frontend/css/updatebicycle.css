@@ -26,7 +26,7 @@ form label{
     font-size: 18px;
     font-style: italic;
 }
-form input,textarea{
+#title,#description,#SP{
     width:100%;
     border: 2px solid black;
     border-radius: 4px;
@@ -35,10 +35,12 @@ form input,textarea{
     background-color: #d4e4ec;
     color:rgb(131, 127, 127)
 }
-form textarea{
+#title{
+    height:38px;
+}
+#description{
     height: 60vh;
 }
-
 form button{
     display:block;
     /* width: 100px; */

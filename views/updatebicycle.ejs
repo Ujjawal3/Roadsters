@@ -20,7 +20,7 @@
         <form method="post" action= /seller/save/<%= index %>> 
    
             <label for="title">Title for your Ad</label>
-            <input type="text" name="title" id="title" required value=<%= bicycle.title %>>
+            <textarea name="title" id="title" required><%= bicycle.title %></textarea>
             <label for="description">Description of your Bicycle</label>
             <textarea name="description" id="description" required><%= bicycle.description %></textarea>
             <label for="SP">Selling Price(in Rs.)</label>
